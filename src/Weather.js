@@ -5,7 +5,7 @@ function Weather() {
     const [temp, setTemp] = useState()
     const [weatherConditon, setWeatherCondition] = useState()
     useEffect(() => {
-    fetch('https://api.openweathermap.org/data/2.5/weather?lat=52.5275432&lon=13.399275&appid=b82302676007aa94197d62ed3cd1776f&units=metric')
+    fetch('https://api.openweathermap.org/data/2.5/weather?lat=52.5275432&lon=13.399275&appid=&units=metric')
     .then(response => {
         if (!response.ok) {
             throw new Error(`Error: ${response.status} ${response.statusText}`)
